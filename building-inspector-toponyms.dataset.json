@@ -1,0 +1,11 @@
+{
+  "id": "building-inspector-toponyms",
+  "title": "Building Inspector Toponyms",
+  "license": "CC0",
+  "description": "Finds toponyms for Buliding Inspector buildings",
+  "author": "Bert Spaan",
+  "website": "http://building-inspector.nypl.org/",
+  "dependsOn": [
+    "building-inspector.transform"
+  ]
+}
