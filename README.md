@@ -36,6 +36,11 @@
 <td>Website</td>
 <td><a href="http://building-inspector.nypl.org/">http://building-inspector.nypl.org/</a></td>
 </tr>
+
+<tr>
+<td>Depends on</td>
+<td><code><a href="https://github.com/nypl-spacetime/etl-building-inspector">building-inspector</a>.transform</code></td>
+</tr>
 </tbody>
 </table>
 
