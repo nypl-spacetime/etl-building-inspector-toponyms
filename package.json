@@ -5,6 +5,10 @@
   "main": "building-inspector-toponyms.js",
   "author": "Bert Spaan",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/nypl-spacetime/etl-building-inspector-toponyms.git"
+  },
   "scripts": {
     "test": "standard",
     "readme": "spacetime-generate-etl-readme ./ -o README.md"
