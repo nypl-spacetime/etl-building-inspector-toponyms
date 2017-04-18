@@ -68,7 +68,12 @@ function transform (config, dirs, tools, callback) {
             return new Error(`No geospatial index found for map layer ${layerId}`)
           }
 
-          const buildings = indexedGeo.intersects(toponym.geometry)
+          let buildings = []
+          try {
+            buildings = indexedGeo.inside(toponym.geometry)
+          } catch (err) {
+            // TODO: log errors
+          }
 
           if (buildings.length) {
             return buildings.map((building) => ({
@@ -80,8 +85,7 @@ function transform (config, dirs, tools, callback) {
               }
             }))
           } else {
-            // TODO: log errors to file
-            // console.log('Not found: ' + toponym.name)
+            // TODO: log errors
           }
         })
         .compact()
