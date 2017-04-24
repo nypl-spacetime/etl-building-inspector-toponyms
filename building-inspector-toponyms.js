@@ -75,7 +75,7 @@ function transform (config, dirs, tools, callback) {
             // TODO: log errors
           }
 
-          if (buildings.length) {
+          if (buildings && buildings.length) {
             return buildings.map((building) => ({
               type: 'relation',
               obj: {
