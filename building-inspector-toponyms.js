@@ -1,5 +1,3 @@
-'use strict'
-
 const fs = require('fs')
 const path = require('path')
 const R = require('ramda')
@@ -72,7 +70,7 @@ function transform (config, dirs, tools, callback) {
           try {
             buildings = indexedGeo.inside(toponym.geometry)
           } catch (err) {
-            // TODO: log errors
+            console.error(err)
           }
 
           if (buildings && buildings.length) {
